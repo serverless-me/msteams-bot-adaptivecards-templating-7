@@ -1,0 +1,68 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.2",
+    "id": "94c33d6d-9a0f-4e13-8b22-a090ed2183a0",
+    "packageName": "07.adaptivecards-template-sdk",
+    "developer": {
+        "name": "Contoso",
+        "websiteUrl": "https://www.contoso.com",
+        "privacyUrl": "https://www.contoso.com/privacy",
+        "termsOfUseUrl": "https://www.contoso.com/termofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Adaptive-Card-7",
+        "full": "Proactive-16"
+    },
+    "description": {
+        "short": "Bot with adaptive Cards",
+        "full": "Bot with adaptive Cards"
+    },
+    "accentColor": "#FEAE25",
+    "bots": [
+        {
+            "botId": "<_BOT_APPID_>",
+            "scopes": [
+                "personal",
+                "groupchat",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+              {
+                "scopes": [
+                  "personal",
+                  "groupchat",
+                  "team"
+                ],
+                "commands": [
+                  {
+                    "title": "Random",
+                    "description": "Sends a pre-defined adaptive card"
+                  },
+                  {
+                    "title": "Template",
+                    "description": "Sends an adaptive card based on a template and corresponding data"
+                  },
+                  {
+                    "title": "SDK",
+                    "description": "Sends an adaptive card that is build with the SDK during runtime"
+                  }
+                ]
+              }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "*.ngrok.io"
+    ]
+}
